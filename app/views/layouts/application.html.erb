@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+		<div class="jumbotron">
+			 <div class="container">
+			 <%= image_tag('hd_big.png', class: 'hd_big') %>
+			 	<h1 class>Fergies Hairdryer</h1>
+			 	<p style="text-align:center;">Just another Man Utd Blog...</p>
+			 	<ul class="jumbotron-links">
+			 		<li><%= link_to "Fergies Hairdryer", posts_path %></li>
+			 		<li><%= link_to "News Feed", '#' %></li>
+			 		<li><%= link_to "Videos", posts_path %></li>
+			 		<% if user_signed_in? %>
+                     <li><%= link_to current_user.profile_name, edit_user_registration_path %></li>
+                     <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+                     <% else %>
+                     <li><%= link_to "Register", new_user_registration_path %></li>
+                     <li><%= link_to "Log in", new_user_session_path, class: '' %></li>
+                    <% end %>
+
+			 	</ul>
+
+
+
+
+			 </div>
+
+
+
+
+
+
+		</div>
+<div class="container">
+	<% flash.each do |type, message| %>
+                   <div class="alert <%= flash_class type %>">
+                	<button class="close" data-dismiss="alert">x</button>
+                	<%= message %>
+                </div>
+			<% end %>
+<%= yield %>
+</div>
+
+<div class="footer">
+	</div>
+
+</body>
+</html>

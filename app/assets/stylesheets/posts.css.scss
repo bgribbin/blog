@@ -1,0 +1,259 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post {
+	border-bottom: solid 2px #ccc;
+	padding: 30px 0;
+
+}
+
+.post .admin {
+	display: none;
+}
+
+.header {
+	 height:500px;
+     margin-bottom: 40px;
+     margin: 0px;
+     padding: 0px;
+	  }
+.post-title {
+
+}
+.post-title h2{
+     font-size: 40px;
+     text-align: left;
+     font-weight: bold;
+}
+
+h1{
+	font-size: 48px;
+    line-height: 1.22;
+}
+.col-12.col-lg-4 {
+	background-color: #f5f5f5;
+}
+.col-12.col-lg-8 {
+	padding-right: 10px;
+}
+.side-column{
+    background-color: #f5f5f5;
+	margin-bottom: 30px;
+	width: 100%;
+    padding-top: 2px;
+	padding-bottom: 5px;
+}
+.side-column ul li {
+	list-style: none;
+    font-size: 16px;
+}
+.side-column ul li a {
+	
+}
+
+.padded {
+	padding: 15px;
+}
+.main-column{
+
+	}
+
+.widget-title{
+	width: 100%;
+	background-color: #f5f5f5;
+	color: #000000;
+
+	
+}
+.widget-title h1{
+	color: #000000;
+	width: 100%;
+	
+}
+.p side-bar {
+	padding: 10px 15px 0;
+}
+.widget-title h3{
+    padding-left: 10px;
+    font-style: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    }
+.side-column-link {
+	color: #b94a48;
+}
+
+.btn.btn-primary {
+
+    background-color: #b94a48;
+    border-color: #b94a48;
+}
+.btn.btn-primary:hover {
+   opacity: 0.5;
+
+}
+.palette-paragraph {
+    padding-left: 5px;
+}
+.postform{
+    width: 500px;
+
+}
+.main-link {
+	color: #000000;
+}
+.main-link:hover {
+    color: #b94a48;
+}
+.nav > li > a{
+	display: inline;
+	padding: none;
+	color: #b94a48;
+}
+
+/* Header
+-------------------------------------------------- */
+
+.jumbotron {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  color: rgba(255,255,255,.75);
+  text-align: center;
+  background-color: #b94a48;
+  border-radius: 0;
+}
+.jumbotron h1,
+.jumbotron .glyphicon-ok {
+  margin-bottom: 15px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.jumbotron .glyphicon-ok {
+  font-size: 40px;
+  line-height: 1;
+}
+.btn-outline {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 18px 24px;
+  font-size: inherit;
+  font-weight: 500;
+  color: #fff; /* redeclare to override the `.jumbotron a` */
+  background-color: transparent;
+  border-color: #fff;
+  border-color: rgba(255,255,255,.5);
+  transition: all .1s ease-in-out;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  color: #b94a48;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.jumbotron:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  content: "";
+  height: 30px;
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,.1));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,.1));
+}
+
+.jumbotron p a,
+.jumbotron-links a {
+  font-weight: 500;
+  color: #fff;
+  transition: all .1s ease-in-out;
+}
+.jumbotron p a:hover,
+.jumbotron-links a:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,.55);
+}
+
+/* Textual links */
+.jumbotron-links {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.jumbotron-links li {
+  display: inline;
+}
+.jumbotron-links li + li {
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+
+    font-size: 21px;
+  }
+  .jumbotron h1,
+  .jumbotron .glyphicon-ok {
+    font-size: 60px;
+  }
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.62;
+	text-align: left;
+}
+/* Steps for setup
+-------------------------------------------------- */
+
+.how-to {
+  padding: 50px 20px;
+  border-top: 1px solid #eee;
+}
+.how-to li {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.how-to li p {
+  font-size: 16px;
+  color: #555;
+}
+.how-to code {
+  font-size: 85%;
+  color: #b94a48;
+  background-color: #fcf3f2;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Icons
+-------------------------------------------------- */
+
+.the-icons {
+  padding: 40px 10px;
+  font-size: 20px;
+  line-height: 2;
+  color: #333;
+  text-align: center;
+}
+.the-icons .glyphicon {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+  padding: 50px 30px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #eee;
+}

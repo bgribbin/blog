@@ -1,0 +1,45 @@
+
+
+<div class="row">
+	<div class="span4">
+<h2>Sign in</h2>
+<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
+  
+
+
+  <%= f.input :email %>
+  <%= f.input :password %>
+ 
+
+  <% if devise_mapping.rememberable? -%>
+  <div><%= f.input :remember_me, as: :boolean %></div>
+  <% end -%>
+
+  <div><%= f.button :submit, "Sign in" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+<div class="span2" style="padding-top:100px;"><h1>Or...</h1></div>
+<div class="span4">
+	<h2>Sign up</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {class: "well"}) do |f| %>
+  <%= devise_error_messages! %>
+
+  
+    <%= f.input :profile_name %>
+
+  
+  <%= f.input :email, :autofocus => true %>
+
+  
+  <%= f.input :password %>
+
+ 
+  <%= f.input :password_confirmation %>
+
+  <div class="form-actions"><%= f.button :submit, "Sign up" %></div>
+<% end %>
+</div>
+</div>
